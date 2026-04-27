@@ -28,9 +28,7 @@ import random
 import music
 
 game = 0
-
 games = ["CATCH", "REACT", "DODGE"]
-
 
 def startup():
     display.scroll("POCKET")
@@ -39,12 +37,10 @@ def startup():
     display.scroll("ARCADE")
     music.play(music.POWER_UP)
     display.clear()
-
-
+    
 def show_menu():
     display.scroll(games[game])
     display.show(str(game + 1))
-
 
 def catcher_game():
     player_x = 2
@@ -83,7 +79,6 @@ def catcher_game():
     display.scroll("SCORE")
     display.scroll(str(score))
 
-
 def reaction_game():
     display.scroll("WAIT")
     sleep(random.randint(2000, 5000))
@@ -97,7 +92,6 @@ def reaction_game():
             display.scroll(str(reaction_time))
             display.scroll("MS")
             break
-
 
 def dodge_game():
     player_x = 2
@@ -134,7 +128,6 @@ def dodge_game():
                 enemy_x = random.randint(0, 4)
                 enemy_y = 0
 
-
 def play_game():
     if game == 0:
         catcher_game()
@@ -144,7 +137,6 @@ def play_game():
 
     if game == 2:
         dodge_game()
-
 
 startup()
 show_menu()
