@@ -20,6 +20,8 @@ The hardest part was setting up multiple games in one program without messing ev
 
 I liked this project, which felt more like building something real instead of just answering questions or tasks. Seeing the games actually run on the micro made it more interesting. I would make some improvements If I had a little bit more time, like keeping track of high scores, adding better sound effects, and adding more games 
 
+- Actual Code
+
 
 from microbit import *
 import random
